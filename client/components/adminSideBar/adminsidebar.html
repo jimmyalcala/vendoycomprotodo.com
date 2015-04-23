@@ -1,0 +1,44 @@
+
+<div class="col-sm-2 nuevo" id="admin-bar" ng-controller="SidebarCtrl">
+  <div id="titulo">
+    Menu Administración
+  </div>
+    <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+      <li ng-class="{active: isActive('/admin/usuarios')}">
+        <a href="/admin/usuarios">
+          <span class="iconosb glyphicon glyphicon-user"></span>
+          Usuarios
+        </a>
+      </li>
+      <li ng-class="{active: isActive('/admin/categorias')}">
+        <a href="/admin/categorias">
+          <span class="iconosb glyphicon glyphicon-list"></span>
+          Categorias
+        </a>
+      </li>
+      <li ng-class="{active: isActive('/admin/pagos')}">
+        <a href="/admin/pagos">
+          <span class="iconosb glyphicon glyphicon-usd"></span>
+          Productos
+        </a>
+      </li>
+      <li ng-class="{active: isActive('/admin/compras')}">
+        <a href="/admin/compras">
+          <span class="iconosb glyphicon glyphicon-shopping-cart"></span>
+          Compras
+        </a>
+      </li>
+      <li ng-class="{active: isActive('/admin/enviarsms')}">
+        <a href="/admin/enviarsms">
+          <span class="iconosb glyphicon glyphicon-phone"></span>
+          Enviar SMS
+        </a>
+      </li>
+      <li ng-class="{active: isActive('/admin/mensajes')}">
+        <a href="/admin/mensajes">
+          <span class="iconosb glyphicon glyphicon-comment"></span>
+          Mensajes
+        </a>
+      </li>
+    </ul>
+</div>

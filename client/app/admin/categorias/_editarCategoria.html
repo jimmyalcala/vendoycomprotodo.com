@@ -1,0 +1,35 @@
+<h2 class="tituloCajaModal">
+  <span class="iconot glyphicon glyphicon-list"></span>
+  Editar Categoria
+</h2>
+<form class="form" id="formModal" name="form" ng-submit="salvar(form)" novalidate>
+    <div class="form-group">
+      <label>Nombre</label>
+
+      <input type="text" id="nombre"  name="nombre" class="form-control" ng-model="categoria.nombre"/>
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="categoria.activa">
+        Activa
+      </label>
+    </div>
+<!--
+    <div class="form-group">
+      <label>Correo</label>
+
+      <input type="email"  id="email"  ng-minlength="5" name="email" class="form-control" ng-model="usuario.email"/>
+    </div>
+
+    <div class="form-group">
+      <label>Tipo</label>
+      <select name="role" id="role" class="form-control" required="required" ng-model="usuario.role">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+    </div>  -->
+
+    <button ng-click="ok()"  class="btn btn-lg btn-primary">Guardar</button>
+    <button class="btn btn-lg btn-primary pull-right" ng-click="cancelar()">Cancelar</button>
+  </form>
